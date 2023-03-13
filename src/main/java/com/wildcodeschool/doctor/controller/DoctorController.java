@@ -21,7 +21,7 @@ public class DoctorController {
         } else if (number>0 && number<13) {
             throw new ResponseStatusException(HttpStatus.SEE_OTHER, "Statut 303 que je ne sais pas lui faire dire");
         } else {
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Impossible de récupérer l'incarnation");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Impossible de récupérer l'incarnation" + number);
         }
     }
 }
